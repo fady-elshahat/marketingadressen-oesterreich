@@ -1,0 +1,798 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Global */
+body {
+     font-family: 'Montserrat', 'Lato', sans-serif;
+     background-color: #FAFAFA;
+}
+
+.clearfix {
+     clear: both;
+}
+
+/* Start NavBar Style */
+.navbar {
+     background-color: #FFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+     position: absolute;
+     width: 100%;
+     z-index: 9999;
+}
+
+.navbar-toggler {
+     border: none;
+}
+
+.navbar-toggler:focus {
+     box-shadow: none;
+}
+
+.navbar-toggler .fa-bars.mina-page {
+     color: #FFF;
+}
+
+.navbar-toggler .fa-bars {
+     color: #000;
+     font-size: 30px;
+     padding-bottom: 6px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+     padding-bottom: 5px;
+     flex-grow: 0;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+     color: #000;
+     font-weight: 600;
+     line-height: 20px;
+     font-size: 16px;
+
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link.nav-link-main {
+     color: #FFF;
+}
+
+.dropdown .dropdown-menu.main {
+     background-color: rgba(250, 250, 250, 0.95);
+
+}
+
+.dropdown .dropdown-menu {
+     background-color: #D95555;
+}
+
+.dropdown-menu.main.show {
+     background: transparent;
+     border: none;
+}
+
+.dropdown-item {
+     color: #FFF;
+     font-size: 16px;
+     font-weight: 500;
+}
+
+.dropdown-item.main:hover, .dropdown-item.main:active {
+     background-color: #EB6464;
+     color: #FFF;
+}
+
+.dropdown-item:hover, .dropdown-item:active {
+     background-color: #FFF;
+     color: #EB6464;
+}
+
+.navbar-collapse .navbar-nav .nav-item {
+     margin-right: 10px;
+}
+
+.authentication-btn {
+     display: flex;
+}
+
+.authentication-btn .sign-up a .sign-up-btn, .authentication-btn .sign-in a .sign-in-btn.nav-link-main {
+     color: #FFF;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 20px;
+     text-transform: capitalize;
+     padding: 10px 30px;
+     margin-top: 3px;
+}
+
+.authentication-btn .sign-in a .sign-in-btn {
+     color: #000;
+     font-weight: 600;
+     margin-top: 3px;
+}
+
+.authentication-btn .sign-up a .sign-up-btn {
+     background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
+     border-radius: 8px;
+     color: #FFF;
+     transition: all 0.3s;
+}
+
+.authentication-btn .sign-up a .sign-up-btn:hover {
+     background: linear-gradient(90.24deg, #DA5656 0.2%, #AF2727 99.83%);
+}
+
+.authentication-btn .sign-up a .sign-up-btn:active {
+     background-color: #B32B2B;
+}
+
+.authentication-btn .sign-in a .sign-in-btn:focus {
+     box-shadow: 0 0 0 0.15rem #EB6464;
+}
+
+/* Start Footer Section */
+footer {
+     background-color: #333333;
+}
+
+footer .hr {
+     height: 2px;
+     background-color: #FFF;
+}
+
+
+.navbar-footer-list .nav-item-footer .nav-link {
+     font-weight: bold;
+     font-size: 17px;
+     line-height: 20px;
+     color: #FFF;
+}
+
+.navbar-footer .social .icon-social {
+     margin-left: 35px;
+}
+
+footer .copyright-footer .copyright-company {
+     font-size: 20px;
+     line-height: 24px;
+     text-transform: capitalize;
+     color: #B3B3B3;
+     font-family: Lato;
+}
+
+footer .copyright-footer .copyright-links .link a {
+     font-family: Lato;
+     font-size: 20px;
+     line-height: 24px;
+     text-transform: capitalize;
+     color: #B2B2B2;
+     text-decoration: none;
+}
+
+/* ###################################################################################### */
+
+
+/* Start Style Index.html */
+
+/* Start Section wallpaper */
+
+#wallpaper {
+     background-image: url(../assets/imges/Rectangle-1.webp);
+     background-position: center center;
+     background-size: cover;
+     height: 70vh;
+}
+
+#wallpaper .layer {
+     width: 100%;
+     height: 70vh;
+     position: absolute;
+     z-index: 1;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0.154) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+#wallpaper .row {
+     height: 70vh;
+}
+
+#wallpaper .content-section {
+     z-index: 3;
+}
+
+#wallpaper .content-section h1 {
+     color: #FFF;
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 49px;
+     text-align: center;
+     text-transform: capitalize;
+}
+
+/* End Section wallpaper */
+
+/* #################################### */
+
+/* Start Section Tabs */
+#tabs .tabs-titel .titel {
+     font-family: Montserrat;
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 49px;
+     color: #000000;
+}
+
+#tabs .tabs-titel .titel>.custam-titel {
+     display: block;
+     color: #FC5D5D;
+}
+
+#tabs .col-md-5 {
+     width: 39.5%;
+}
+
+#tabs .col-md-7 {
+     width: 60.5%;
+}
+
+#tabs #tabs-list {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     list-style: none outside;
+     padding: 0;
+     background: #F4F4F4;
+     border-radius: 8px;
+}
+
+#tabs #tabs-list .item-tabs {
+     padding: 16px 21px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     cursor: pointer;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     text-align: center;
+     text-transform: capitalize;
+     color: #4C4C4C;
+     transition: all 0.7s;
+}
+
+#tabs #tabs-list .item-tabs.activate {
+     background: #FFFFFF;
+     border-radius: 8px;
+     border: none;
+     position: relative;
+     box-shadow: 0px -15px 30px rgb(0 0 0 / 5%);
+     transition: 0.5s all;
+}
+
+#tabs #tabs-list .item-tabs.activate::after {
+     position: absolute;
+     content: "";
+     width: 50px;
+     height: 50px;
+     background-color: #FFF;
+     transform: rotate(45deg);
+     top: 33%;
+     z-index: -1;
+     border-radius: 8px;
+     box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.05);
+
+}
+
+#tabs #tabs-list .item-tabs.activate::before {
+     width: 0;
+}
+
+
+
+#tabs #tabs-list .item-tabs img {
+     margin-right: 10px;
+}
+
+#tabs .content-tabs {
+     margin-top: 35px;
+}
+
+#tabs .content-tabs>div:not(:first-child) {
+     display: none;
+}
+
+.content-tabs .branch {
+     transition: all 1s all;
+}
+
+.content-tabs .branch .search-branch input {
+     width: 100%;
+     padding: 15px 20px;
+     border-radius: 8px;
+     border: none;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.content-tabs .branch .card-branch {
+     border-radius: 8px 8px 0px 0px;
+     background: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+     border-radius: 8px;
+     margin-bottom: 20px;
+     transition: all 0.5s;
+}
+
+.content-tabs .branch .card-branch.activate {
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.content-tabs .branch .card-branch .body-card {
+     padding: 20px;
+}
+
+.content-tabs .branch .card-branch .body-card .titel {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 24px;
+     margin-bottom: 5px;
+     color: #4D4D4D;
+     display: block;
+}
+
+.content-tabs .branch .card-branch.activate .body-card {
+     border-top: 3px solid #E55E5E;
+     padding: 17px 20px 20px 20px;
+}
+
+.content-tabs .branch .card-branch .body-card .desc {
+     font-style: normal;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 17px;
+     color: #575757;
+     margin-bottom: 10px;
+}
+
+.content-tabs .branch .card-branch .body-card input {
+     width: 19px;
+     height: 19px;
+     border-radius: 50%;
+     background-color: #EEEEEE;
+     appearance: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     padding: 2px;
+     margin-top: 2px;
+}
+
+.content-tabs .branch .card-branch .body-card input:checked {
+     content: url(../assets/icons/circal\ checkbox.svg);
+     border: none;
+}
+
+.content-tabs .company-size {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+     border-radius: 8px;
+     padding: 40px 30px;
+}
+
+.content-tabs .company-size .titel {
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 24px;
+     text-transform: capitalize;
+     margin-bottom: 30px;
+     color: #4D4D4D;
+}
+
+.content-tabs .company-size .company-group {
+     border: 1px solid #4C4C4C;
+     border-radius: 8px;
+     padding: 10px;
+     text-align: center;
+}
+
+
+.content-tabs .company-size .company-group .size-group-titel {
+     font-weight: bold;
+     font-size: 15px;
+     line-height: 20px;
+     text-align: center;
+     text-transform: capitalize;
+     color: #4C4C4C;
+     padding: 10px 0;
+
+}
+
+/* Side Bar */
+#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+     padding: 40px 30px;
+     font-family: Montserrat;
+     color: #000000;
+}
+
+#sidebar .address-prices .address-prices-titel .titel {
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 24px;
+     text-align: center;
+}
+
+#sidebar .address-prices .address-prices-titel .titel>.custem-titel {
+     color: #FD4747;
+}
+
+#sidebar .address-prices .address-prices-titel .desc {
+     font-size: 14px;
+     line-height: 17px;
+     text-align: center;
+     color: #A9A9A9;
+     width: 80%;
+     margin: 0 auto 26px auto;
+}
+
+#sidebar .address-prices hr {
+     background-color: #7B7B7B;
+}
+
+#sidebar .address-prices .address-prices-choice .titel {
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 22px;
+}
+
+#sidebar .address-prices .address-prices-choice .branche {
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 22px;
+     margin: 0;
+}
+
+#sidebar .address-prices .address-prices-choice .branche-prices {
+     list-style: none outside;
+     padding: 0;
+     margin-top: 10px;
+}
+
+#sidebar .address-prices .address-prices-choice .branche-prices .item-branche {
+     display: flex;
+     align-items: center;
+     margin-bottom: 12px;
+}
+
+.address-prices-choice .branche-prices .item-branche .delete-item {
+     background: transparent;
+     border: none;
+     outline: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 5px;
+}
+
+.address-prices-choice .branche-prices .item-branche-details {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+}
+
+.address-prices-choice .branche-prices .item-branche-details .name-item {
+     font-weight: 300;
+     font-size: 18px;
+}
+
+.address-prices-choice .branche-prices .item-branche-details .prices-item {
+     font-weight: 600;
+}
+
+.address-prices-buy .address-prices-total {
+     margin: 30px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.address-prices-buy .address-prices-total .titel {
+     margin: 0;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+}
+
+.address-prices-buy .address-prices-total .salary {
+     font-size: 16px;
+     line-height: 20px;
+     font-weight: 700;
+}
+
+.address-prices-buy .buy-btn {
+     background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
+     border-radius: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 16px 0;
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 24px;
+     color: #FFFFFF;
+     border: 0;
+     margin-bottom: 20px;
+}
+
+.address-prices-buy .request-sample-btn {
+     border: 1px solid #000000;
+     border-radius: 5px;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 20px;
+     background-color: transparent;
+     width: 100%;
+     padding: 16px 0;
+}
+
+#sidebar .address-limit label, #sidebar .companies .companies-titel {
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 22px;
+     margin-bottom: 10px;
+}
+
+#sidebar .address-limit .desc {
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 17px;
+     color: #A9A9A9;
+}
+
+#sidebar .address-limit input {
+     width: 100%;
+     padding: 15px 20px;
+     border: 1px solid #4C4C4C;
+     border-radius: 8px;
+}
+
+#sidebar .address-limit input::placeholder, .content-tabs .branch .search-branch input::placeholder {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+     text-transform: capitalize;
+     color: #B6B6B6;
+}
+
+#sidebar .address-limit .icon-search, .content-tabs .branch .search-branch .icon-search {
+     position: absolute;
+     top: 50%;
+     right: 1px;
+     transform: translate(-34%, -50%);
+     background-color: transparent;
+     border: none;
+     outline: none;
+}
+
+#sidebar .companies .companies-list {
+     list-style: none outside;
+     padding: 0;
+}
+
+#sidebar .companies .companies-list .companies-item label {
+     margin-bottom: 12px;
+     font-size: 16px;
+     line-height: 20px;
+     color: #000000;
+}
+
+.companies-list .companies-item input {
+     width: 19px;
+     height: 19px;
+     border-radius: 2px;
+     margin-right: 18px;
+     background-color: #FFF;
+     appearance: none;
+     border: 1px solid #4C4C4C;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.companies-list .companies-item input::after {
+     content: url(../assets/icons/Check.svg);
+}
+
+.companies-list .companies-item input:checked {
+     background-color: #FD4747;
+     color: white;
+     border: none;
+}
+
+.companies-list .companies-item input:checked::after {
+     display: block;
+}
+
+/* End Section Tabs */
+
+/* #################################### */
+
+
+/* End Style Index.html */
+
+/* ###################################################################################### */
+
+/* Start Style Sign-Up.html*/
+
+#sign-up-form #form-up, #sign-in-form #form-in {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+     border-radius: 8px;
+     padding: 30px 35px;
+     width: 100%;
+}
+
+#sign-up-form .col-md-7, #sign-in-form .col-md-7 {
+     flex: 0 0 auto;
+     width: 54.4%;
+}
+
+#sign-up-form #form-up .title-form, #sign-in-form #form-in .title-form {
+     font-weight: bold;
+     font-size: 26px;
+     line-height: 32px;
+     margin-bottom: 30px;
+}
+
+#sign-up-form #form-up .input-item,
+#sign-in-form #form-in .input-item {
+     display: flex;
+     margin: 20px 0;
+     border: 1px solid #C8C8C8;
+     overflow: hidden;
+     border-radius: 8px;
+     position: relative;
+}
+
+#sign-up-form #form-up .input-item input,
+#sign-in-form #form-in .input-item input {
+     padding: 15px 20px;
+     font-size: 17px;
+     width: 100%;
+     font-weight: 500;
+     border: none;
+
+}
+
+#sign-up-form #form-up .input-item input:focus,
+#sign-in-form #form-in .input-item input:focus {
+     outline: 1px solid #C8C8C8;
+}
+
+#sign-up-form #form-up .input-item input::placeholder,
+#sign-in-form #form-in .input-item input::placeholder {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+     color: #848484;
+}
+
+#sign-up-form #form-up .input-item .icon-input,
+#sign-in-form #form-in .input-item .icon-input {
+     background: #F4F4F4;
+     border-radius: 7px 0px 0px 7px;
+     padding: 18px 25px;
+     border-right: 1px solid #C8C8C8;
+}
+
+#sign-up-form #form-up .input-item .pass-icon,
+#sign-in-form #form-in .input-item .pass-icon {
+     position: absolute;
+     top: 50%;
+     right: 5px;
+     transform: translate(-50%, -50%);
+}
+
+#sign-up-form #form-up .forget-pass,
+#sign-in-form #form-in .forget-pass {
+     color: #D64D4D;
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 20px;
+     text-decoration: none;
+}
+
+#sign-up-form #form-up .input-item .pass-icon.btn:focus,
+#sign-in-form #form-in .input-item .pass-icon.btn:focus {
+     box-shadow: 0 0 0 0.15rem #EB6464;
+
+}
+
+#sign-up-form .submit-form .submit-up,
+#sign-in-form .submit-form .submit-in {
+     width: 100%;
+     background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+     border-radius: 8px;
+     color: #FFF;
+     padding: 23px 0;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 24px;
+     transition: all 0.3s;
+
+}
+
+#sign-up-form .submit-form .submit-up:hover,
+#sign-in-form .submit-form .submit-in:hover {
+     background: linear-gradient(90.24deg, #DA5656 0.2%, #AF2727 99.83%);
+}
+
+#sign-up-form .submit-form .submit-up:active,
+#sign-in-form .submit-form .submit-in:active {
+     background-color: #B32B2B;
+}
+
+#sign-up-form .submit-form p {
+     font-size: 16px;
+     line-height: 20px;
+     color: #000;
+     text-align: center;
+}
+
+#sign-up-form #form-up .submit-form p a {
+     color: #D64D4D;
+     display: inline-block;
+     font-size: 18px;
+     text-decoration: none;
+
+}
+
+/* Ens Style Sign-Up.htmll */
+
+/* ###################################################################################### */
+
+
+@media only screen and (max-width: 768px) {
+     .navbar-expand-lg .navbar-collapse {
+          text-align: center;
+          padding: 20px;
+          background-color: #FFF;
+     }
+
+     .navbar-collapse .navbar-nav .nav-item {
+          margin: 5px 0;
+     }
+
+     .navbar-collapse .navbar-nav .nav-item .nav-link {
+          color: #333;
+     }
+
+     .authentication-btn {
+          flex-direction: column;
+     }
+
+     .authentication-btn .sign-up, .authentication-btn .sign-in {
+          margin: 5px 0;
+     }
+
+     .authentication-btn .sign-in a .sign-in-btn {
+          color: #333;
+          border: 2px solid #CF4545;
+          border-radius: 8px;
+     }
+
+     .shopping-cart {
+          margin-top: 5px;
+     }
+
+     #wallpaper .content-section h1 {
+          font-size: 30px;
+     }
+}
