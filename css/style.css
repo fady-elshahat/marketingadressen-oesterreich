@@ -176,7 +176,7 @@ footer .copyright-footer .copyright-links .link a {
 /* Start Section wallpaper */
 
 #wallpaper {
-     background-image: url(../assets/imges/Rectangle-1.webp);
+     background-image: url(../assets/imges/Rectangle-2.webp);
      background-position: center center;
      background-size: cover;
      height: 70vh;
@@ -396,8 +396,26 @@ footer .copyright-footer .copyright-links .link a {
      border-radius: 8px;
      padding: 10px;
      text-align: center;
+     cursor: pointer;
 }
 
+.content-tabs .company-size .company-group.activate {
+     border: 2px solid #D04646;
+     position: relative;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+}
+
+.content-tabs .company-size .company-group.activate::after {
+     content: url(../assets/icons/Check.svg);
+     position: absolute;
+     top: -12px;
+     right: -14px;
+     width: 26px;
+     height: 26px;
+     border-radius: 50%;
+     background-color: #D04646;
+}
 
 .content-tabs .company-size .company-group .size-group-titel {
      font-weight: bold;

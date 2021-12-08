@@ -1,10 +1,13 @@
 // Change Taps
 if ( window.location.pathname == "/" || window.location.pathname == "/index.html" ) {
+
+     const wallpaper = ["../assets/imges/Rectangle-1.webp" , ]
      const tabs = document.querySelectorAll( "#tabs-list .item-tabs" );
      const tabsArray = Array.from( tabs );
      const tabsContent = document.querySelectorAll( ".content-tabs > div" );
      const divsArray = Array.from( tabsContent );
      const Inputcards = Array.from( document.querySelectorAll( ".card-branch .body-card input" ) );
+     const companys = Array.from( document.querySelectorAll( ".company-group" ) );
 
 
 
@@ -34,6 +37,21 @@ if ( window.location.pathname == "/" || window.location.pathname == "/index.html
                }
           } )
      } )
+
+     // Select Company Size 
+     companys.forEach( ( c ) => {
+          c.addEventListener( "click", (e) => {
+               const companyGroup = e.currentTarget;
+               if ( companyGroup.classList.contains("activate") === true) {
+                    companyGroup.classList.remove( "activate" )
+               } else {
+                    companys.forEach( ( co ) => {
+                         co.classList.remove( "activate" )
+                    } )
+                    companyGroup.classList.add( "activate" )
+               }
+          })
+     })
 
 
 }
