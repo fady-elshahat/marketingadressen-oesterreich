@@ -790,7 +790,7 @@ footer .copyright-footer .copyright-links .link a {
      color: #000000;
 }
 
-#shopping-card .erhalt-shopping > div:not(:last-child) {
+#shopping-card .erhalt-shopping>div:not(:last-child) {
      border-bottom: 1px solid #7B7B7B;
      padding-bottom: 10px;
 }
@@ -827,9 +827,10 @@ footer .copyright-footer .copyright-links .link a {
      align-items: center;
 }
 
-#shopping-card .erhalt-shopping .demands-list p {
-     font-weight: 500;
+#shopping-card .erhalt-shopping .request > p {
+     font-weight: 600;
      font-size: 18px;
+     margin: 0 0 10px 0;
      line-height: 22px;
      color: #4C4C4C;
 }
