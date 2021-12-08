@@ -1,7 +1,6 @@
 // Change Taps
 if ( window.location.pathname == "/" || window.location.pathname == "/index.html" ) {
 
-     const wallpaper = ["../assets/imges/Rectangle-1.webp" , ]
      const tabs = document.querySelectorAll( "#tabs-list .item-tabs" );
      const tabsArray = Array.from( tabs );
      const tabsContent = document.querySelectorAll( ".content-tabs > div" );

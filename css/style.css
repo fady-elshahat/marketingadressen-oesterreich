@@ -229,11 +229,11 @@ footer .copyright-footer .copyright-links .link a {
      color: #FC5D5D;
 }
 
-#tabs .col-md-5 {
+#tabs .col-md-5, #shopping-card .col-md-5 {
      width: 39.5%;
 }
 
-#tabs .col-md-7 {
+#tabs .col-md-7, #shopping-card .col-md-7 {
      width: 60.5%;
 }
 
@@ -429,12 +429,13 @@ footer .copyright-footer .copyright-links .link a {
 }
 
 /* Side Bar */
-#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies {
+#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping {
      background: #FFFFFF;
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
      padding: 40px 30px;
      font-family: Montserrat;
      color: #000000;
+     border-radius: 8px;
 }
 
 #sidebar .address-prices .address-prices-titel .titel {
@@ -457,7 +458,7 @@ footer .copyright-footer .copyright-links .link a {
      margin: 0 auto 26px auto;
 }
 
-#sidebar .address-prices hr {
+#sidebar .address-prices hr, #sidebar-shopping hr {
      background-color: #7B7B7B;
 }
 
@@ -532,7 +533,7 @@ footer .copyright-footer .copyright-links .link a {
      font-weight: 700;
 }
 
-.address-prices-buy .buy-btn {
+.address-prices-buy .buy-btn, #sidebar-shopping .btn-check-out {
      background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
      border-radius: 8px;
      display: flex;
@@ -546,6 +547,11 @@ footer .copyright-footer .copyright-links .link a {
      color: #FFFFFF;
      border: 0;
      margin-bottom: 20px;
+     transition: 0.4s all;
+}
+
+.address-prices-buy .buy-btn:hover, #sidebar-shopping .btn-check-out:hover {
+     background: linear-gradient(90.24deg, #DA5656 0.2%, #AF2727 99.83%);
 }
 
 .address-prices-buy .request-sample-btn {
@@ -646,7 +652,7 @@ footer .copyright-footer .copyright-links .link a {
 
 /* ###################################################################################### */
 
-/* Start Style Sign-Up.html*/
+/* Start Style Sign-Up.html and Sign-in.html */
 
 #sign-up-form #form-up, #sign-in-form #form-in {
      background: #FFFFFF;
@@ -772,10 +778,117 @@ footer .copyright-footer .copyright-links .link a {
 
 }
 
-/* Ens Style Sign-Up.htmll */
+/* End Style Sign-Up.html and Sign-in.html */
 
 /* ###################################################################################### */
 
+/* Start Style Shopping.html */
+#shopping-card .shopping-card-titel .titel {
+     font-weight: 700;
+     font-size: 40px;
+     line-height: 49px;
+     color: #000000;
+}
+
+#shopping-card .erhalt-shopping > div:not(:last-child) {
+     border-bottom: 1px solid #7B7B7B;
+     padding-bottom: 10px;
+}
+
+#shopping-card .erhalt-shopping .choice .titel-choice {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 22px;
+     color: #4C4C4C;
+     margin: 0;
+}
+
+#shopping-card .erhalt-shopping .choice .btn-edit, .choice .btn-trash, .request .btn-delete {
+     background-color: transparent;
+     border: none;
+}
+
+#shopping-card .erhalt-shopping .request .request-titel h3 {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 22px;
+     color: #4C4C4C;
+     margin: 0 6px 0px 0;
+}
+
+#shopping-card .erhalt-shopping .demands-list {
+     padding: 0;
+     list-style: none outside;
+}
+
+.erhalt-shopping .demands-list .item-demands-details {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#shopping-card .erhalt-shopping .demands-list p {
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 22px;
+     color: #4C4C4C;
+}
+
+#sidebar-shopping .titel-card h2 {
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 22px;
+     color: #4C4C4C;
+     padding-bottom: 10px;
+}
+
+#sidebar-shopping .order .titel-order {
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     color: #4C4C4C;
+}
+
+#sidebar-shopping .order .list-order {
+     list-style: none outside;
+     margin-top: 18px;
+     margin-bottom: 23px;
+     padding: 0;
+}
+
+#sidebar-shopping .order .list-order .item-list {
+     margin: 5px 0;
+}
+
+#sidebar-shopping .order .list-order .item-list .item-list-details .entries, .item-list-details .titel-preis {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+     color: #4C4C4C
+}
+
+.item-list-details .number, .item-list-details .preis, .item-list-details .preis-details, .totel-price .price-tot {
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 20px;
+     color: #4C4C4C;
+}
+
+.totel-price .titel {
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 20px;
+     color: #000000;
+}
+
+#sidebar-shopping .btn-check-out a {
+     color: #FFF;
+     text-decoration: none;
+}
+
+/* End Style Shopping.html */
+
+/* ###################################################################################### */
 
 @media only screen and (max-width: 768px) {
      .navbar-expand-lg .navbar-collapse {
