@@ -229,11 +229,11 @@ footer .copyright-footer .copyright-links .link a {
      color: #FC5D5D;
 }
 
-#tabs .col-md-5, #shopping-card .col-md-5 {
+#tabs .col-md-5, #shopping-card .col-md-5, #check-out .col-md-5 {
      width: 39.5%;
 }
 
-#tabs .col-md-7, #shopping-card .col-md-7 {
+#tabs .col-md-7, #shopping-card .col-md-7, #check-out .col-md-7 {
      width: 60.5%;
 }
 
@@ -429,7 +429,7 @@ footer .copyright-footer .copyright-links .link a {
 }
 
 /* Side Bar */
-#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping {
+#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping, #check-out .buy-without-registration {
      background: #FFFFFF;
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
      padding: 40px 30px;
@@ -540,7 +540,6 @@ footer .copyright-footer .copyright-links .link a {
      justify-content: center;
      align-items: center;
      width: 100%;
-     padding: 16px 0;
      font-weight: 600;
      font-size: 20px;
      line-height: 24px;
@@ -548,6 +547,12 @@ footer .copyright-footer .copyright-links .link a {
      border: 0;
      margin-bottom: 20px;
      transition: 0.4s all;
+}
+
+.address-prices-buy .buy-btn a {
+     color: #FFF;
+     text-decoration: none;
+     padding: 16px 80px;
 }
 
 .address-prices-buy .buy-btn:hover, #sidebar-shopping .btn-check-out:hover {
@@ -563,6 +568,12 @@ footer .copyright-footer .copyright-links .link a {
      background-color: transparent;
      width: 100%;
      padding: 16px 0;
+}
+
+.address-prices-buy .request-sample-btn a {
+     text-decoration: none;
+     padding: 0 20px;
+     color: #000000;
 }
 
 #sidebar .address-limit label, #sidebar .companies .companies-titel {
@@ -674,8 +685,7 @@ footer .copyright-footer .copyright-links .link a {
      margin-bottom: 30px;
 }
 
-#sign-up-form #form-up .input-item,
-#sign-in-form #form-in .input-item {
+.input-item {
      display: flex;
      margin: 20px 0;
      border: 1px solid #C8C8C8;
@@ -684,8 +694,7 @@ footer .copyright-footer .copyright-links .link a {
      position: relative;
 }
 
-#sign-up-form #form-up .input-item input,
-#sign-in-form #form-in .input-item input {
+.input-item input {
      padding: 15px 20px;
      font-size: 17px;
      width: 100%;
@@ -694,37 +703,34 @@ footer .copyright-footer .copyright-links .link a {
 
 }
 
-#sign-up-form #form-up .input-item input:focus,
-#sign-in-form #form-in .input-item input:focus {
+
+#check-out .buy-without-registration #input-email-check:focus,
+.input-item input:focus {
      outline: 1px solid #C8C8C8;
 }
 
-#sign-up-form #form-up .input-item input::placeholder,
-#sign-in-form #form-in .input-item input::placeholder {
+#check-out .buy-without-registration #input-email-check::placeholder, .input-item input::placeholder {
      font-weight: 500;
      font-size: 16px;
      line-height: 20px;
      color: #848484;
 }
 
-#sign-up-form #form-up .input-item .icon-input,
-#sign-in-form #form-in .input-item .icon-input {
+.input-item .icon-input {
      background: #F4F4F4;
      border-radius: 7px 0px 0px 7px;
      padding: 18px 25px;
      border-right: 1px solid #C8C8C8;
 }
 
-#sign-up-form #form-up .input-item .pass-icon,
-#sign-in-form #form-in .input-item .pass-icon {
+.input-item .pass-icon {
      position: absolute;
      top: 50%;
      right: 5px;
      transform: translate(-50%, -50%);
 }
 
-#sign-up-form #form-up .forget-pass,
-#sign-in-form #form-in .forget-pass {
+.forget-pass {
      color: #D64D4D;
      font-weight: 600;
      font-size: 16px;
@@ -732,14 +738,15 @@ footer .copyright-footer .copyright-links .link a {
      text-decoration: none;
 }
 
-#sign-up-form #form-up .input-item .pass-icon.btn:focus,
-#sign-in-form #form-in .input-item .pass-icon.btn:focus {
+.input-item .pass-icon.btn:focus {
      box-shadow: 0 0 0 0.15rem #EB6464;
 
 }
 
 #sign-up-form .submit-form .submit-up,
-#sign-in-form .submit-form .submit-in {
+#sign-in-form .submit-form .submit-in,
+#form-up-check .submit-form .submit-up-check,
+#form-in-check .submit-form .submit-in-check {
      width: 100%;
      background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -749,17 +756,21 @@ footer .copyright-footer .copyright-links .link a {
      font-weight: bold;
      font-size: 20px;
      line-height: 24px;
-     transition: all 0.3s;
+     transition: all 0.4s;
 
 }
 
 #sign-up-form .submit-form .submit-up:hover,
-#sign-in-form .submit-form .submit-in:hover {
+#sign-in-form .submit-form .submit-in:hover,
+#form-up-check .submit-form .submit-up-check:hover,
+#form-in-check .submit-form .submit-in-check:hover {
      background: linear-gradient(90.24deg, #DA5656 0.2%, #AF2727 99.83%);
 }
 
 #sign-up-form .submit-form .submit-up:active,
-#sign-in-form .submit-form .submit-in:active {
+#sign-in-form .submit-form .submit-in:active,
+#form-up-check .submit-form .submit-up-check:hover,
+#form-in-check .submit-form .submit-in-check:hover {
      background-color: #B32B2B;
 }
 
@@ -783,7 +794,7 @@ footer .copyright-footer .copyright-links .link a {
 /* ###################################################################################### */
 
 /* Start Style Shopping.html */
-#shopping-card .shopping-card-titel .titel {
+.section-titel .titel {
      font-weight: 700;
      font-size: 40px;
      line-height: 49px;
@@ -827,7 +838,7 @@ footer .copyright-footer .copyright-links .link a {
      align-items: center;
 }
 
-#shopping-card .erhalt-shopping .request > p {
+#shopping-card .erhalt-shopping .request>p {
      font-weight: 600;
      font-size: 18px;
      margin: 0 0 10px 0;
@@ -885,11 +896,83 @@ footer .copyright-footer .copyright-links .link a {
 #sidebar-shopping .btn-check-out a {
      color: #FFF;
      text-decoration: none;
+     padding: 16px 80px;
 }
 
 /* End Style Shopping.html */
 
 /* ###################################################################################### */
+
+
+/* Start Style check-out.html */
+#check-out .buy-without-registration .titel {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 22px;
+     color: #000000;
+     margin-bottom: 15px;
+}
+
+#check-out .buy-without-registration #input-email-check {
+     width: 100%;
+     border: 1px solid #C8C8C8;
+     border-radius: 8px;
+     font-size: 17px;
+     margin-right: 20px;
+     padding: 15px 20px;
+}
+
+#check-out .buy-without-registration .btn-email-check {
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+     color: #FFFFFF;
+     background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
+     border-radius: 8px;
+     border: none;
+     padding: 16px 32px;
+}
+
+#check-out .tabs-check-out {
+     background: #F1F1F1;
+     box-shadow: inset 3px -3px 15px rgba(0, 0, 0, 0.15);
+     border-radius: 0px 8px 0px 0px;
+}
+
+#check-out .tabs-check-out .item-check {
+     text-align: center;
+     padding: 20px 0;
+     width: 50%;
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 24px;
+     color: #000000;
+     cursor: pointer;
+     transition: all 0.7s;
+}
+
+#check-out .tabs-check-out .item-check.activate {
+     background-color: #FFF;
+     transition: all 0.7s;
+
+}
+
+#check-out .content-tabs-check {
+     background-color: #FFF;
+     padding: 40px 30px;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+     border-radius: 8px;
+}
+
+#check-out .content-tabs-check>div:not(:first-child) {
+     display: none;
+}
+
+/* End Style check-out.html */
+
+
+/* ###################################################################################### */
+
 
 @media only screen and (max-width: 768px) {
      .navbar-expand-lg .navbar-collapse {
