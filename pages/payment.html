@@ -14,7 +14,7 @@
 
           <!-- Main Style -->
           <link rel="stylesheet" href="../css/style.css">
-          <title>MARKETING GADRESSEN - DEUTSCHLAND - Check Out</title>
+          <title>MARKETING GADRESSEN - DEUTSCHLAND - Payment</title>
      </head>
 
      <body>
@@ -78,104 +78,83 @@
 
           <!-- End NavBar -->
 
-          <!-- Start Main Sections -->
+
+          <!-- Start Main Section -->
 
           <main>
-               <!-- Start Check Out Section -->
-               <section id="check-out" class="pt-5">
+               <!-- Start Payment Section -->
+               <section id="payment" class="pt-5">
                     <div class="container py-5">
                          <div class="section-titel mt-5 pt-4">
-                              <h1 class="titel">Check out</h1>
+                              <h1 class="titel">Kasse</h1>
                          </div>
-                         <div class="row">
+                         <div class="row mt-5 mb-3">
                               <div class="col-md-7">
-                                   <div class="buy-without-registration pt-5 mb-4">
-                                        <label for="input-email-check" class="titel">Ohne Anmeldung kaufen</label>
-                                        <div class="input-search d-flex justify-content-between align-items-center">
-                                             <input type="text" id="input-email-check" placeholder="E-mail">
-                                             <button class="btn-email-check" type="submit"><a
-                                                       href="./payment.html">Weiter</a></button>
+                                   <div class="payment-choose mb-4">
+                                        <div
+                                             class="payment-item activate d-flex justify-content-between align-items-center">
+                                             <h4 class="titel-item">
+                                                  Kreditkarte
+                                             </h4>
+                                             <div class="imges-payment">
+                                                  <img src="../assets/imges/payment/visa.png" class="me-2"
+                                                       alt="visa img" width="84.12px" height="29.68px">
+                                                  <img src="../assets/imges/payment/Mastercard-logo 1.png"
+                                                       alt="mastercard img" width="54.58px" height="42.76px">
+                                             </div>
+                                        </div>
+                                        <div class="payment-item d-flex justify-content-between align-items-center">
+                                             <h4 class="titel-item">
+                                                  Paypal
+                                             </h4>
+                                             <img src="../assets/imges/payment/paypal.png" alt="paypal img"
+                                                  width="123px" height="36px">
+                                        </div>
+                                        <div class="payment-item d-flex justify-content-between align-items-center">
+                                             <h4 class="titel-item">
+                                                  E-rechnung
+                                             </h4>
+                                             <img src="../assets/imges/payment/erechnung 1.png" alt="erechnung img"
+                                                  width="135px" height="50px">
+                                        </div>
+                                        <div class="payment-item d-flex justify-content-between align-items-center">
+                                             <h4 class="titel-item">
+                                                  Sofortüberweisung
+                                             </h4>
+                                             <img src="../assets/imges/payment/Sofortüberweisung_Logo 1.png"
+                                                  alt="Sofortüberweisung img" width="123px" height="36px">
                                         </div>
                                    </div>
-                                   <div class="tabs-check-out">
-                                        <ul
-                                             class="tabs-list-check d-flex p-0 m-0 list-unstyled justify-content-between align-items-center">
-                                             <li class="item-check activate" data-check=".registration">
-                                                  Registrieren
-                                             </li>
-                                             <li class="item-check " data-check=".sign-in-check">
-                                                  Anmeldung
-                                             </li>
-                                        </ul>
+                                   <div class="card-number">
+                                        <form id="form-card-number">
+                                             <div class="input-item-payment w-100 ">
+                                                  <labal for="number-card-input" class="titel">Kartennummer</labal>
+                                                  <input id="number-card-input" type="text"
+                                                       placeholder="5148 4768 5699 8888 7788">
+                                             </div>
+                                             <div class="d-flex justify-content-between align-items-center">
+                                                  <div class="input-item-payment me-3">
+                                                       <labal for="data-input" class="titel">Gültig bis</labal>
+                                                       <input id="data-input" type="text" placeholder="06/23">
+                                                  </div>
+                                                  <div class="input-item-payment">
+                                                       <labal for="password-input" class="titel">Passwort</labal>
+                                                       <input id="password-input" type="password" placeholder="####">
+                                                  </div>
+                                             </div>
+                                             <label for="input-currency" class="titel">Betrag</label>
+                                             <div class="input-item-payment w-100 d-flex justify-content-center align-items-center">
+                                                  <div class="select-currency  me-3 d-flex align-items-center justify-content-center w-50">
+                                                       <input type="text" value="$" placeholder="betragen" id="input-currency" class="mb-0">
+                                                       <select name="currency" id="currency">
+                                                            <option value="USD">USD</option>
+                                                            <option value="EUR">EUR</option>
+                                                       </select>
+                                                  </div>
+                                                  <button type="submit" class="submit-card-number">Bezahlen</button>
+                                             </div>
+                                        </form>
                                    </div>
-                                   <div class="content-tabs-check">
-                                        <div class="registration">
-                                             <form id="form-up-check">
-                                                  <div class="input-item">
-                                                       <span class="icon-input" aria-label="user Icon">
-                                                            <img src="../assets/icons/user-icon.svg" width="32.39px"
-                                                                 height="32px" alt="User Icon">
-                                                       </span>
-                                                       <input type="text" placeholder="Name" autocomplete="off"
-                                                            id="input-name-up">
-                                                  </div>
-                                                  <div class="input-item">
-                                                       <span class="icon-input">
-                                                            <img src="../assets/icons/mail icon.svg" width="32px"
-                                                                 height="32px" alt="E-mail Icon">
-                                                       </span>
-                                                       <input type="text" placeholder="E-mail" autocomplete="off"
-                                                            id="input-email-up">
-                                                  </div>
-                                                  <div class="input-item">
-                                                       <span class="icon-input">
-                                                            <img src="../assets/icons/passw icon.svg" width="100%"
-                                                                 height="100%" alt="Password Icon">
-                                                       </span>
-                                                       <input type="password" placeholder="Passwort"
-                                                            class="input-password" id="input-pass-up">
-                                                       <button class="pass-icon btn p-0" type="button">
-                                                            <img src="../assets/icons/visibility pass.svg" width="100%"
-                                                                 height="100%" alt="pass visibility">
-                                                       </button>
-                                                  </div>
-                                                  <div class="submit-form mt-4">
-                                                       <button type="submit" aria-label="Submit Form"
-                                                            class="submit-up-check btn  mb-1">Weiter</button>
-                                                  </div>
-                                             </form>
-                                        </div>
-                                        <div class="sign-in-check">
-                                             <form id="form-in-check">
-                                                  <div class="input-item">
-                                                       <span class="icon-input" aria-label="user Icon">
-                                                            <img src="../assets/icons/user-icon.svg" width="32px"
-                                                                 height="32px" alt="User Icon">
-                                                       </span>
-                                                       <input type="text" placeholder="Name oder username"
-                                                            autocomplete="off" id="input-name-in">
-                                                  </div>
-                                                  <div class="input-item mb-2">
-                                                       <span class="icon-input">
-                                                            <img src="../assets/icons/passw icon.svg"
-                                                                 alt="Password Icon">
-                                                       </span>
-                                                       <input type="password" placeholder="Passwort"
-                                                            class="input-password" id="input-pass-in">
-                                                       <button class="pass-icon btn p-0" type="button">
-                                                            <img src="../assets/icons/visibility pass.svg"
-                                                                 alt="pass visibility">
-                                                       </button>
-                                                  </div>
-                                                  <div class="submit-form mt-4">
-                                                       <button type="submit" aria-label="Submit Form"
-                                                            class="submit-in-check btn mb-1">Register</button>
-                                                  </div>
-                                             </form>
-                                        </div>
-                                   </div>
-
-
                               </div>
                               <div class="col-md-5">
                                    <aside id="sidebar-shopping">
@@ -232,7 +211,7 @@
                          </div>
                     </div>
                </section>
-               <!-- End Check Out Section -->
+               <!-- End Payment Section -->
           </main>
 
           <!-- End Main Section -->
@@ -311,6 +290,7 @@
                     </div>
                </div>
           </footer>
+
           <!-- End Footer Section -->
 
           <!-- Bootstrap JS -->

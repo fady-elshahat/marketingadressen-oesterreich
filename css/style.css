@@ -229,11 +229,11 @@ footer .copyright-footer .copyright-links .link a {
      color: #FC5D5D;
 }
 
-#tabs .col-md-5, #shopping-card .col-md-5, #check-out .col-md-5 {
+#tabs .col-md-5, #shopping-card .col-md-5, #check-out .col-md-5, #payment .col-md-5 {
      width: 39.5%;
 }
 
-#tabs .col-md-7, #shopping-card .col-md-7, #check-out .col-md-7 {
+#tabs .col-md-7, #shopping-card .col-md-7, #check-out .col-md-7, #payment .col-md-7 {
      width: 60.5%;
 }
 
@@ -429,7 +429,7 @@ footer .copyright-footer .copyright-links .link a {
 }
 
 /* Side Bar */
-#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping, #check-out .buy-without-registration {
+#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping, #check-out .buy-without-registration, #payment .card-number {
      background: #FFFFFF;
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
      padding: 40px 30px;
@@ -763,7 +763,7 @@ footer .copyright-footer .copyright-links .link a {
 #sign-up-form .submit-form .submit-up:hover,
 #sign-in-form .submit-form .submit-in:hover,
 #form-up-check .submit-form .submit-up-check:hover,
-#form-in-check .submit-form .submit-in-check:hover {
+#form-in-check .submit-form .submit-in-check:hover, .submit-card-number:hover{
      background: linear-gradient(90.24deg, #DA5656 0.2%, #AF2727 99.83%);
 }
 
@@ -926,11 +926,17 @@ footer .copyright-footer .copyright-links .link a {
      font-weight: 500;
      font-size: 20px;
      line-height: 24px;
-     color: #FFFFFF;
      background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
      border-radius: 8px;
      border: none;
-     padding: 16px 32px;
+     padding: 16px 0;
+}
+
+
+#check-out .buy-without-registration .btn-email-check a {
+     color: #FFFFFF;
+     padding: 0 32px;
+     text-decoration: none;
 }
 
 #check-out .tabs-check-out {
@@ -973,41 +979,141 @@ footer .copyright-footer .copyright-links .link a {
 
 /* ###################################################################################### */
 
+/* Start Style payment.htnl */
+#payment .payment-choose .payment-item {
+     border: 1px solid #4C4C4C;
+     box-sizing: border-box;
+     border-radius: 8px;
+     padding: 31px 20px;
+     margin-bottom: 20px;
+     cursor: pointer;
 
-@media only screen and (max-width: 768px) {
-     .navbar-expand-lg .navbar-collapse {
-          text-align: center;
-          padding: 20px;
-          background-color: #FFF;
-     }
-
-     .navbar-collapse .navbar-nav .nav-item {
-          margin: 5px 0;
-     }
-
-     .navbar-collapse .navbar-nav .nav-item .nav-link {
-          color: #333;
-     }
-
-     .authentication-btn {
-          flex-direction: column;
-     }
-
-     .authentication-btn .sign-up, .authentication-btn .sign-in {
-          margin: 5px 0;
-     }
-
-     .authentication-btn .sign-in a .sign-in-btn {
-          color: #333;
-          border: 2px solid #CF4545;
-          border-radius: 8px;
-     }
-
-     .shopping-cart {
-          margin-top: 5px;
-     }
-
-     #wallpaper .content-section h1 {
-          font-size: 30px;
-     }
 }
+
+#payment .payment-choose .payment-item .titel-item {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 22px;
+     color: #000000;
+}
+
+#payment .payment-choose .payment-item.activate {
+     background-color: #FFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+     border-radius: 8px;
+     border: 2px solid #D04646;
+     position: relative;
+}
+
+#payment .payment-choose .payment-item.activate::after {
+     content: url(../assets/icons/Check.svg);
+     background-color: #D04646;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: -17px;
+     right: -14px;
+}
+
+#payment .card-number .input-item-payment {
+     width: 50%;
+}
+
+#payment .card-number .titel {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 22px;
+     color: #000000;
+     display: block;
+     margin-bottom: 30px;
+}
+
+#payment .card-number .input-item-payment input {
+     border: 1px solid #4C4C4C;
+     box-sizing: border-box;
+     border-radius: 8px;
+     width: 100%;
+     padding: 16px 30px;
+     margin-bottom: 25px;
+     font-weight: 500;
+     font-size: 18px;
+
+}
+
+#payment .card-number .input-item-payment input::placeholder {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+     color: #848484;
+}
+
+#payment .card-number .input-item-payment input:focus {
+     outline: 1px solid #C8C8C8;
+}
+
+.submit-card-number {
+     background: linear-gradient(90.24deg, #EB6464 0.2%, #CF4545 99.83%);
+     border-radius: 8px;
+     width: 50%;
+     padding: 21px 0;
+     border: none;
+     color: #FFF;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 20px;
+     transition: 0.3s all;
+}
+
+.select-currency {
+     border: 1px solid #4C4C4C;
+     border-radius: 8px;
+     position: relative;
+
+}
+
+.select-currency::before {
+     content: url(../assets/icons/arrow\ bottom.svg);
+     position: absolute;
+     top: 28px;
+     right: 9px;
+}
+
+#payment .select-currency #input-currency {
+     border: none;
+     font-weight: 500;
+}
+
+#payment .select-currency #input-currency:focus {
+     outline: none;
+}
+
+#currency {
+     padding: 19px 25px 19px 15px;
+     border: none;
+     background: #F4F4F4;
+     border-radius: 0px 7px 7px 0px;
+     appearance: none;
+     font-size: 18px;
+     line-height: 22px;
+     color: #4C4C4C;
+}
+
+#currency option {
+     padding: 15px 10px;
+     background-color: #F4F4F4;
+     color: #333;
+     font-size: 19px;
+}
+
+#currency:focus {
+     outline: none;
+}
+
+/* End Style payment.htnl */
+
+
+/* ###################################################################################### */
