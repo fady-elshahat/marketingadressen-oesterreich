@@ -52,6 +52,37 @@ if ( window.location.pathname == "/" || window.location.pathname == "/index.html
           })
      })
 
+     window.onload = function () {
+          slideOne();
+          slideTwo();
+     }
+     // Range Slider
+     const sliderOne = document.getElementById( "year-range1" );
+     const sliderTwo = document.getElementById( "year-range2" );
+     const displayValueOne = document.getElementById( "value-one" );
+     const displayValueTwo = document.getElementById( "value-two" );
+     const minGap = 0;
+     const sliderTrack = document.querySelector( ".slider-track" );
+     const sliderMaxValue = document.getElementById( "year-range1" ).max;
+     function slideOne() {
+          if ( parseInt( sliderTwo.value ) - parseInt( sliderOne.value ) <= minGap ) {
+               sliderOne.value = parseInt( sliderTwo.value ) - minGap;
+          }
+          displayValueOne.textContent = sliderOne.value;
+          fillColor();
+     }
+     function slideTwo() {
+          if ( parseInt( sliderTwo.value ) - parseInt( sliderOne.value ) <= minGap ) {
+               sliderTwo.value = parseInt( sliderOne.value ) + minGap;
+          }
+          displayValueTwo.textContent = sliderTwo.value;
+          fillColor();
+     }
+     function fillColor() {
+          percent1 = ( sliderOne.value / sliderMaxValue ) * 100;
+          percent2 = ( sliderTwo.value / sliderMaxValue ) * 100;
+          sliderTrack.style.background = `linear-gradient(to right, #E2E2E2 ${ percent1 }% , #4C4C4C ${ percent1 }% , #4C4C4C ${ percent2 }%, #E2E2E2 ${ percent2 }%)`;
+     }
 
 }
 
@@ -128,4 +159,3 @@ if ( window.location.pathname == "/pages/payment.html" ) {
 
      })
 }
-
