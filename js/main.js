@@ -84,6 +84,39 @@ if ( window.location.pathname == "/" || window.location.pathname == "/index.html
           sliderTrack.style.background = `linear-gradient(to right, #E2E2E2 ${ percent1 }% , #4C4C4C ${ percent1 }% , #4C4C4C ${ percent2 }%, #E2E2E2 ${ percent2 }%)`;
      }
 
+     // Select Sales Class
+     const salesClasses = Array.from( document.querySelectorAll( ".chart-item" ) );
+     salesClasses.forEach( ( el ) => {
+          el.addEventListener( "click", (e) => {
+               const classes = e.currentTarget;
+               if ( classes.classList.contains("activate") === true) {
+                    classes.classList.remove("activate")
+               } else {
+                    salesClasses.forEach( (cl) => {
+                         cl.classList.remove("activate")
+                    } )
+                    classes.classList.add( "activate" )
+               }
+               
+          })
+     } )
+     
+     // Select Legal Form
+     const legalItems = Array.from( document.querySelectorAll( ".legal-item" ) );
+     legalItems.forEach( ( item ) => {
+          item.addEventListener( "click", (e) => {
+               const legalItem = e.currentTarget
+               if ( legalItem.classList.contains( "activate" ) === true ) {
+                    legalItem.classList.remove( "activate" )
+               } else {
+                    legalItems.forEach( ( i ) => {
+                         i.classList.remove( "activate" )
+                    } )
+                    legalItem.classList.add( "activate" )
+               }
+
+          })
+     })
 }
 
 
