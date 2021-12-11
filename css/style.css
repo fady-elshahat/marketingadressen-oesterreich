@@ -429,7 +429,7 @@ footer .copyright-footer .copyright-links .link a {
 }
 
 /* Side Bar */
-#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping, #check-out .buy-without-registration, #payment .card-number, .feature .range, .feature .legal-form {
+#sidebar .address-prices, #sidebar .address-limit, #sidebar .companies, #sidebar-shopping, #shopping-card .erhalt-shopping, #check-out .buy-without-registration, #payment .card-number, .feature .range, .feature .legal-form, .content-locaation .map, .content-locaation .postcode, .content-locaation .list .federal-states {
      background: #FFFFFF;
      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
      padding: 40px 30px;
@@ -859,22 +859,29 @@ input[type="range"]:active::-webkit-slider-thumb {
      right: 50%;
 }
 
-.feature .legal-form .legal-item {
+.feature .legal-form .legal-item, .federal-states .state-item {
      border: 1px solid #4C4C4C;
      border-radius: 8px;
-     padding: 10px;
+     padding: 30px 10px;
+     height: 150px;
+     width: 192px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
      cursor: pointer;
 }
 
-.feature .legal-form .legal-item.activate {
+.feature .legal-form .legal-item.activate, .federal-states .state-item.activate {
      background: #FFFFFF;
      border: 2px solid #D04646;
      box-sizing: border-box;
      border-radius: 8px;
      position: relative;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
 }
 
-.feature .legal-form .legal-item.activate::after {
+.feature .legal-form .legal-item.activate::after, .federal-states .state-item.activate::after {
      content: url(../assets/icons/Check.svg);
      position: absolute;
      top: -12px;
@@ -891,11 +898,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .legal-form .legal-item .legal-titel {
      font-weight: 700;
      font-size: 25px;
-     line-height: 37px;
+     line-height: 30px;
      text-align: center;
      text-transform: capitalize;
      color: #4D4D4D;
-     padding: 15px 0 0 0;
+
 }
 
 .legal-form .legal-item .legal-des {
@@ -907,6 +914,110 @@ input[type="range"]:active::-webkit-slider-thumb {
      text-transform: capitalize;
      color: #4D4D4D;
 }
+
+
+
+.locaation .tabs-locaation {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.locaation .tabs-locaation .item-locaation {
+     margin-right: 30px;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 17px;
+     text-transform: capitalize;
+     background: #F4F4F4;
+     border: 1px solid #4D4D4D;
+     border-radius: 23px;
+     color: #4C4C4C;
+     padding: 14px 28px;
+     cursor: pointer;
+     transition: 0.4s all;
+}
+
+.locaation .tabs-locaation .item-locaation.activate {
+     background: #4C4C4C;
+     border-radius: 23px;
+     color: #FFFFFF;
+     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05)
+}
+
+.content-locaation>div:not(:first-child) {
+     display: none;
+}
+
+.content-locaation .titel, .federal-states .titel {
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 24px;
+     text-transform: capitalize;
+     color: #4D4D4D;
+     margin-bottom: 20px;
+}
+
+.federal-states .state-item .state-titel {
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px;
+     text-transform: capitalize;
+     color: #4D4D4D;
+     margin-top: 20px;
+}
+
+.federal-states .state-item.activate .state-titel {
+     color: #E76060;
+}
+
+.search-map .input, .search-postcode .input {
+     display: flex;
+     width: 100%;
+}
+
+.search-map .input input, .search-postcode .input input {
+     padding: 18px;
+     border: 1px solid #4C4C4C;
+     border-right: none;
+     width: 75%;
+     border-radius: 8px 0 0 8px;
+}
+
+.search-map .input input::placeholder, .search-postcode .input input::placeholder {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 20px;
+     color: #848484;
+}
+
+.search-map .submit-input-map, .search-postcode .submit-input-postcode {
+     border: 1px solid #4C4C4C;
+     border-radius: 8px;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+     background: #FFFFFF;
+     color: #000000;
+     padding: 16px 32px;
+}
+
+
+.search-map .input .btn-distance, .search-postcode .input .btn-distance {
+     border: 1px solid #4C4C4C;
+     border-radius: 0px 8px 8px 0px;
+     padding: 16px 17px;
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 24px;
+     color: #4C4C4C;
+     background: #EFEFEF;
+}
+
+
 
 /* End Section Tabs */
 
@@ -959,7 +1070,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 
 #check-out .buy-without-registration #input-email-check:focus,
-.input-item input:focus {
+.input-item input:focus, .search-map .input input:focus {
      outline: 1px solid #C8C8C8;
 }
 

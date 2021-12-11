@@ -116,7 +116,45 @@ if ( window.location.pathname == "/" || window.location.pathname == "/index.html
                }
 
           })
+     } )
+     
+
+     // Move in Locaation Tabs
+
+     const tabsLocaation = Array.from( document.querySelectorAll( ".item-locaation" ) )
+     const divsLocaation = Array.from( document.querySelectorAll( ".content-locaation > div" ) )
+
+     tabsLocaation.forEach( ( el ) => {
+          el.addEventListener( "click", ( e ) => {
+               tabsLocaation.forEach( ( el ) => {
+                    el.classList.remove( "activate" );
+               } )
+               e.currentTarget.classList.add( "activate" )
+               divsLocaation.forEach( ( div ) => {
+                    div.style.display = "none"
+               } )
+               document.querySelector( e.currentTarget.dataset.loca ).style.display = "block";
+          } )
+     } )
+
+
+
+     // Select State Item
+     const stateItems = Array.from( document.querySelectorAll( ".federal-states .state-item" ) );
+     stateItems.forEach( ( item ) => {
+          item.addEventListener( "click", (e) => {
+               const stateItem = e.currentTarget
+               if ( stateItem.classList.contains( "activate" ) === true ) {
+                    stateItem.classList.remove( "activate" )
+               } else {
+                    stateItems.forEach( ( i ) => {
+                         i.classList.remove( "activate" )
+                    } )
+                    stateItem.classList.add( "activate" )
+               }
+          })
      })
+
 }
 
 
